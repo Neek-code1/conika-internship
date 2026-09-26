@@ -83,12 +83,12 @@ const Landing = () => {
               <div
                 style={{
                   position: "absolute",
-                  width: "900px",
-                  height: "900px",
+                  width: "1500px",
+                  height: "1500px",
                   borderRadius: "50%",
                   background: "#f1efff",
-                  left: "-40px",
-                  top: "-110px",
+                  left: "0px",
+                  top: "-1000px",
                   zIndex: 0,
                 }}
               ></div>
