@@ -11,7 +11,7 @@ import ItemDetails from "./pages/ItemDetails";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/conika-internship"> 
       <Nav />
 
       <Routes>
