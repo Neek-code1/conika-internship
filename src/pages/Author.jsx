@@ -2,12 +2,11 @@ import React from "react";
 import AuthorBanner from "../images/author_banner.jpg";
 import AuthorItems from "../components/author/AuthorItems";
 import { Link, useParams } from "react-router-dom";
-import AuthorImage from "../images/author_thumbnail_1.jpg";
 import { sellers } from "../components/home/TopSellers";
 
 const Author = () => {
   const { id } = useParams();
-  const author = sellers.find(seller=>seller.id == id)
+  const author = sellers.find((seller) => seller.id === Number(id));
   return (
     <div id="wrapper">
       <div className="no-bottom no-top" id="content">

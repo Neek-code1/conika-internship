@@ -23,13 +23,12 @@ function Countdown({ minutes }) {
 
     //this is for stopping interval
     const timeout = setTimeout(() => {
-      clearInterval(interval);
-    }, minutes * 60);
-    // return()=>{
-    //   //these are for stoppiong both when component is unmounted
-    //   clearInterval(interval)
-    //   clearTimeout(timeout)
-    // }
+  clearInterval(interval);
+}, minutes * 60 * 1000);
+   return () => {
+  clearInterval(interval);
+  clearTimeout(timeout);
+};
   }, [minutes]);
 
   return minutes && formatTime(time);

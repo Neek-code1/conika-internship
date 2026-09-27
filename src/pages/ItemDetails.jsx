@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
 import EthImage from "../images/ethereum.svg";
 import { Link, useParams } from "react-router-dom";
-import AuthorImage from "../images/author_thumbnail_1.jpg";
-import nftImage from "../images/nftImage.jpg";
 import { items } from "../components/explore/ExploreItems";
 import { collections } from "../components/home/HotCollections";
 import { sellers } from "../components/home/TopSellers";
 
 const ItemDetails = () => {
   const { id } = useParams();
-  const item = items.concat(collections).find((el) => el.id == id);
+  const item = items.concat(collections).find((el) => el.id === Number(id));
   const author = sellers.find(seller=>seller.image === item.author)
   const owner = sellers.find(seller=>seller.image === item.owner)
 

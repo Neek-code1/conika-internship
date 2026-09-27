@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import AuthorImage from "../../images/author_thumbnail_1.jpg";
-import nftImage from "../../images/nftImage.jpg";
 import { items } from "../home/NewItems";
 import NewItem from "../home/NewItem";
 
